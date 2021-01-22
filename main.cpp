@@ -28,7 +28,22 @@ int main(void)
         cout << *it << " ";
     }
     cout << endl << "Output: ";
-    result = removeDuplicated(value);
+    result = removeDuplicates(value);
+    for(it=result.begin(); it!=result.end(); ++it){
+        cout << *it << " ";
+    }
+    cout << endl;
+
+    /*
+    remove duplicates2
+    */
+    cout << "===== remove duplicates =====" << endl;
+    cout << "Input: ";
+    for(it=value.begin(); it!=value.end(); ++it){
+        cout << *it << " ";
+    }
+    cout << endl << "Output: ";
+    result = removeDuplicates2(value);
     for(it=result.begin(); it!=result.end(); ++it){
         cout << *it << " ";
     }
